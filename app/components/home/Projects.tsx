@@ -6,12 +6,12 @@ import CardBody from "../ui/Card/CardBody";
 import CardFooter from "../ui/Card/CardFooter";
 import TechStack from "../ui/Card/TechStack";
 import Pill from "../ui/Pill";
-import { projects } from "@/lib/projects";
+import { projects, Project } from "@/lib/projects";
 import { SiGithub, SiGooglechrome } from "react-icons/si";
 
 export default function Projects() {
     const slicedProjects = projects.slice(0, 3);
-    const projectElements = slicedProjects.map((project) => (
+    const projectElements = slicedProjects.map((project: Project) => (
         <Card key={project.title}>
             <CardHeader>
                 <Image src={project.imgSrc} alt={project.imgAlt} width={400} height={400} className="rounded-t-lg" />
