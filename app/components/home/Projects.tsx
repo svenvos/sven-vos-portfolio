@@ -10,7 +10,8 @@ import { projects } from "@/lib/projects";
 import { SiGithub, SiGooglechrome } from "react-icons/si";
 
 export default function Projects() {
-    const projectElements = projects.map((project) => (
+    const slicedProjects = projects.slice(0, 3);
+    const projectElements = slicedProjects.map((project) => (
         <Card key={project.title}>
             <CardHeader>
                 <Image src={project.imgSrc} alt={project.imgAlt} width={400} height={400} className="rounded-t-lg" />
