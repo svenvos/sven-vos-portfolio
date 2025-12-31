@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 import extending from "@/public/projects/extending.png";
 import deVier from "@/public/projects/de-vier.png";
 import veldi from "@/public/projects/veldi.png";
+import printForge from "@/public/projects/print-forge.png";
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiBun, SiFigma, SiReact, SiJavascript, SiCss3, SiNodedotjs } from "react-icons/si";
 
 export interface TechStackItem {
@@ -110,5 +111,35 @@ export const projects: Project[] = [
         ],
         githubUrl: "https://github.com/svenvos/veldi",
         liveDemoUrl: "https://veldi.nl/"
+    },
+    {
+        imgSrc: printForge,
+        imgAlt: "PrintForge website preview.",
+        title: "PrintForge",
+        description: "PrintForge is a project from the Fullstack Developer Career Path from Scrimba. It's my first Next.js project in which I learned everything about the basics of Next.js. From routing (and nested routing), to filtering with usePathname, and all other basics.",
+        techStack: [
+            {
+                icon: SiNextdotjs,
+                name: "Next.js"
+            },
+            {
+                icon: SiTailwindcss,
+                name: "Tailwind CSS"
+            },
+            {
+                icon: SiTypescript,
+                name: "TypeScript"
+            },
+            {
+                icon: SiNodedotjs,
+                name: "Node.js"
+            },
+            {
+                icon: SiFigma,
+                name: "Figma"
+            }
+        ],
+        githubUrl: "https://github.com/svenvos/print-forge",
+        liveDemoUrl: "https://print-forge-chi.vercel.app"
     }
 ];
